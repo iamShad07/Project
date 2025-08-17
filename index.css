@@ -1,0 +1,402 @@
+{
+    margin:0;
+    font-family: 'Times New Roman', serif;
+    border: border-box;
+}
+.navbar {
+    height:70px;
+    background-color:#050403;
+    color:white; 
+    display:flex;
+    align-items:center;
+    justify-content:space-evenly;
+}
+
+/* yaha se logo start hai */
+
+.nav-logo{
+    height:50px;
+    width:100px;
+}
+.logo{
+    background-image: url("logo.png");
+    background-size:cover;
+    display:flex;
+    justify-content:center;
+    height:50px;
+    width:100%;
+    border-radius:5px;
+}
+
+/* yaha se hover effect hai  */
+
+.border{
+    border: 2px solid transparent;
+}
+.border:hover{
+    border:2px solid #e3d7c5;
+    border-radius:5px;
+}
+
+/* yaha se location star hai */
+
+.font{
+    color:#e3d7c5;
+    font-size:0.80rem;
+    align-items:center;
+    text-decoration:none;
+}
+.location-icon{
+    display:flex;
+    align-items:center;
+    margin-left:20px;
+}
+
+/* yaha se search bar start hai */
+
+.nav-search{
+    display:flex;
+    justify-content: space-evenly;
+    background-color:#cdb89a;
+    width:600px;
+    height:50px;
+    border-radius:3px;
+}
+.nav-search:hover{
+    border:3px solid #bca787ff;
+}
+.search-mic{
+    width:50px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:1.3rem;
+    text-align:centre;
+    border-top-left-radius:3px;
+    border-bottom-left-radius:3px;
+    border:none;
+}
+.search-input{
+    width:100%;
+    font-size:1rem;
+    border:none;
+}
+.search-icon{
+    width:50px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:1.3rem;
+    border-top-right-radius:3px;
+    border-bottom-right-radius:3px;
+}
+
+/* yaha se signin start hai */
+
+.nav-signin{
+    width:85px;
+    height:55px;
+    justify-content:center;
+    position: relative;
+    display:inline-block;
+    cursor:pointer; 
+}
+.nav-signin ul {
+    display: none;
+    position: absolute;
+    top: 100%; /* Anchor ke niche */
+    left: 0;
+    background: #2d2416ff;
+    border: 1px solid #f3e7d3ff;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 150px;
+    z-index: 100;
+    border-radius:15px;
+}
+.nav-signin ul li {
+    border-bottom: 1px solid #eee;
+}
+
+.nav-signin ul li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #aa8553;
+}
+.nav-signin ul li a:hover {
+    background: #f0eae1;
+    border-radius:13px;
+}
+.nav-signin:hover ul {
+    display: block;
+}
+
+.sin{
+    color:#eee6db;
+    font-size:0.80rem;
+    text-decoration:none;
+}
+.sign{
+    font-size:1rem;
+    color:#e3d7c5;
+    text-decoration:none;
+    display:flex:
+}
+.account-icon{
+    display:flex;
+    color:#eee6db;
+}
+
+/* yaha se orders and details */
+
+.nav-orders{
+    width:65px;
+    height:55px;
+    justify-content:center; 
+}
+.orders{
+    color:#eee6db;
+    font-size:0.80rem;
+    text-decoration:none;
+}
+.details{
+    font-size:1rem;
+    color:#e3d7c5;
+    text-decoration:none;
+    display:flex:
+}
+.order-icon{
+    display:flex;
+    color:#eee6db;
+}
+
+/* yaha se cart start hai */
+
+.nav-cart i{
+    font-size:30px;
+    color:#eee6db;
+}
+.cart{
+    font-size:1rem;
+    text-decoration:none;
+    color:#e3d7c5;
+    font-weight:600;
+}
+
+/* yaha se panel start hai nav ke niche wala line */
+/* yaha se menu-bar icon start hai */
+
+.panel{
+    height:40px;
+    width:100%;
+    background-color:#bda179;
+    display:flex;
+    justify-content:space-evenly;
+}
+.bar{
+    display:flex;
+    color:#211a10;
+    justify-content:center;
+    position: relative;
+    display:inline-block;
+    cursor: pointer;
+    font-size:1.1rem;
+    font-weight:600;
+}
+/* yaha se menu-bar ke andar ka start hai */
+.menu-ops{
+    width:300px;
+    background-color:#ad8958;
+    justify-content:center;
+    border-radius:5px;
+    borderradius:5px;
+    display:none;
+}
+.menu-nav a{
+    text-decoration:none;
+    color:#261e13;
+    font-size:1.5rem;
+    display:inline-block;
+    justify-content:center;
+}
+.menu-nav:hover a{
+    background-color:#d3bfa5;
+    display:block;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+}
+.menu-option{
+    margin-top:0px;
+    width:300px;
+    background-color:#cdb89a;
+    display:inline-block;
+    border-bottom-right-radius:5px;
+    border-bottom-left-radius:5px;
+}
+.menu-option h3{
+    margin:25px;
+    display:inline-block;
+}
+.menu-option a{
+    text-decoration:none;
+    color:#261e13;
+    padding:5px;
+    display:inline-block;
+}
+.menu-option li{
+    list-style:none;
+    display:inline-block;
+    padding:5px;
+}
+.menu-option li:hover{
+    background-color:#f0eae1;
+    border-radius:5px;
+}
+.bar:hover menu-ops{
+    display:block;
+}
+
+/* yaha se panel-option start hai */
+
+.panel-option a{
+    display:inline-block;
+    justify-content:center;
+    text-decoration:none;
+    color:#211a10;
+} 
+.panel-about a{
+    display:inline-block;
+    justify-content:center;
+    text-decoration:none;
+    color:#211a10;
+}
+.panel-option{
+    width:70%;
+    font-size:1rem;
+}
+.panel-about{
+    font-size:1rem;
+    font-weight:600;
+}
+.effect:hover{
+    background-color:#d0bc9f;
+    display:inline-block;
+    border-radius:3px;
+}
+
+/* yaha se hero section start hai yaani contents start hai */
+
+.hero-section{
+    background-image: url("mainpi.png");
+    height:500px;
+    background-size:cover;
+    display:flex;
+    justify-content:center;
+    align-items:flex-end;
+}
+.hero-message{
+    background-color:#decfba;
+    color:#4d3c26;
+    height:30px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    fo-size:1.5rem;
+    font-weight:500;
+    width:90%;
+    margin-bottom:35px;
+}
+
+/* yaha se shoping ka section start hai */
+
+
+.shop-section{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-evenly;
+    background-color:#ebe2d6;
+}
+.box{
+    height:400px;
+    width:23%;
+    background-color:#f0eae1;
+    padding:20px 0px 15px;
+    margin:15px;
+}
+.box-content{
+    margin-left:1rem;
+    margin-right:1rem;
+}
+.box-content h2{
+    text-decoration:none;
+    color:#6e5636;
+    word-wrap: break-word;
+}
+.box-img{
+    height:250px;
+    background-size:cover;
+    margin-top:1rem;
+    margin-bottom:1rem;
+}
+.see-ops{
+    color:#735a38;
+    text-decoration:none;
+}
+.see-ops:hover{
+    text-decoration:underline;
+}
+
+
+/* yaha se footer star hai */
+
+footer{
+    margin-top:30px;
+}
+.foot-one{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:#d3bfa5;
+    font-size:1.2rem;
+    height:45px;
+}
+.one{
+    color:#4d3c26;
+    text-decoration:none;
+    display:block;
+}
+.foot-one:hover{
+    background-color:#f0eae1;
+}
+.foot-two{
+    background-color:#b59568;
+    height:300px;
+    display:flex;
+    justify-content:space-evenly;
+}
+.foot-two ul{
+    display:block;
+    margin-top:15px;
+    color:#312718;
+}
+.foot-two a{
+    display:block;
+    margin-top:10px;
+    font-size:0.95rem;
+    color:#261e13;
+    text-decoration:none;
+}
+
+/* yaha se copyright section start hai */
+
+.copyright{
+    background-color:#8e7046;
+    display:flex;
+    justify-content:center;
+    text-align:center;
+}
+.copyright p{
+    font-size:0.95rem;
+}
